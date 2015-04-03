@@ -12,6 +12,7 @@ public class Customer implements ICustomer {
 	private ArrayList<Order> customerOrders;
 
 	/**
+	 * @author yanina
 	 * Default constructor of the customer
 	 * Initializes the list of customer's orders
 	 * @param name name of the customer
@@ -24,6 +25,7 @@ public class Customer implements ICustomer {
 
 
 	/**
+	 * @author yanina
 	 * by amount for product in entire project we mean loadtrucks as this is how much expires periodically
 	 * @param plant specifies which plant should be completing the order
 	 * @param amnt specifies how many loadtrucks of concrete are ordered
@@ -39,6 +41,7 @@ public class Customer implements ICustomer {
 	}
 
 	/**
+	 * @author yanina
 	 * Provides list of orders for particular customer
 	 * @return list of Orders
 	 * @see Order
@@ -53,7 +56,7 @@ public class Customer implements ICustomer {
 	}
 
 	/**
-	 *
+	 *@author yanina
 	 * To avoid risk of fraudulent notification customer checks that params of complete order match the original order
 	 * @param order
 	 * @throws OrderDeliveryExcepiton

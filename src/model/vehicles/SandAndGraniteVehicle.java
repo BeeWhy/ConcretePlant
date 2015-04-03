@@ -6,6 +6,7 @@ import model.ComponentTypes;
 public class SandAndGraniteVehicle extends BaseVehicle {
 
 	/**
+	 * @author yanina
 	 * Constructs a vehicle that can deliver sand OR granitee with specified capacity
 	 * @param capacity capacity of the delivery vehicle
 	 */
@@ -14,6 +15,7 @@ public class SandAndGraniteVehicle extends BaseVehicle {
 	}
 
 	/**
+	 * @author yanina
 	 * Validates that only proper component is requested of this delivery vehicle. In this case it is either Sand or Granite
 	 * @param type type of component requested
 	 * @throws WrongComponentException

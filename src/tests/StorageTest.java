@@ -46,7 +46,7 @@ public class StorageTest {
     @Test
     public void testAddAmount() throws Exception {
 
-        final double additionVal = 3.0;
+        double additionVal = 3.0;
 
         double initAmountOfSand = testStorage.getAmntOfSand();
         double initAmountOfGranite = testStorage.getAmntOfGranite();
@@ -70,7 +70,7 @@ public class StorageTest {
     @Test
     public void testConsume() throws Exception {
 
-        final double consumptionVal = 3.0;
+        double consumptionVal = 3.0;
         testPlant.ensureComponentAvailability(consumptionVal, consumptionVal, consumptionVal, consumptionVal);
 
         double initAmountOfSand = testStorage.getAmntOfSand();

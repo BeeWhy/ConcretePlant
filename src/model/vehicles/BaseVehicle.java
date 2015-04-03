@@ -10,16 +10,19 @@ import model.Storage;
 public abstract class BaseVehicle {
 
     /**
+     * @author yanina
      * A double-type capacity of a vehicle
      */
     private final double capacity; //how much of component 1 vehicle can deliver
     /**
+     * @author yanina
      *Type of component tha vehicle can carry.
      * @see ComponentTypes
      */
     ComponentTypes type;
 
     /**
+     * @author yanina
      * Default constructor of a delivery vehicle. Typically proper vehicles are created by the VehicleFactory
      * @see VehicleFactory
      * @param capacity typical amount of component that vehicles can deliver to the storage
@@ -32,6 +35,7 @@ public abstract class BaseVehicle {
     }
 
     /**
+     * @author yanina
      * In case a vehicle can carry multiple type of components we only specify its capacity.
      * However, make sure to check with documentation for such vehicle to know which components are allowed.
      * @param capacity
@@ -42,6 +46,7 @@ public abstract class BaseVehicle {
     }
 
     /**
+     * @author yanina
      * Accepts a request from storage to deliver the component.
      * According to visitor patter we accept req from storage to deliver component and once we are done call the storage method with the delivery amnt
 
@@ -56,6 +61,7 @@ public abstract class BaseVehicle {
     }
 
     /**
+     * @author yanina
      * Ensures that only allowed by this vehicle component is requested to this vehicle
      * @param type type of component requested
      * @throws WrongComponentException if component requested doesn't match the type of the vehicle
@@ -63,6 +69,7 @@ public abstract class BaseVehicle {
     public abstract void validateComponentType(ComponentTypes type) throws WrongComponentException;
 
     /**
+     * @author yanina
      * Delivers amount of component to the storage
      * @param toStorage Instance of storage to which the component is delivered
      */
@@ -71,6 +78,7 @@ public abstract class BaseVehicle {
     }
 
     /**
+     * @author yanina
      * Provides capacity of the vehile
      * @return double-type value of the capacity of the vehicle
      */

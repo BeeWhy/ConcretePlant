@@ -4,6 +4,7 @@ import model.ComponentTypes;
 
 public class Sand extends BaseComponent{
 	/**
+	 * @author yanina
 	 * Constructs sand component with user-provided amount
 	 * The type of component is Sand
 	 * @see  ComponentTypes

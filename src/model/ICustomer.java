@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 public interface ICustomer {
 	/**
+	 * @author yanina
 	 * Makes order of concrete to the plant.
 	 * @param plant specifies which plant should be completing the order
 	 * @param amnt specifies how many loadtrucks of concrete are ordered
@@ -15,6 +16,7 @@ public interface ICustomer {
 	void makeOrder(ConcretePlant plant, int amnt) throws EmptyOrderException;
 
 	/**
+	 * @author yanina
 	 * The customer is notified by the plant when the order is complete when the plant calls this method.
 	 *
 	 * @param order
@@ -22,6 +24,7 @@ public interface ICustomer {
 	 */
 	void acceptOrder(Order order) throws OrderDeliveryExcepiton;
 	/**
+	 * @author yanina
 	 * Provides list of orders for particular customer
 	 * @return list of Orders
 	 * @see Order

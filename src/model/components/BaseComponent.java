@@ -8,6 +8,7 @@ public abstract class BaseComponent implements IComponent{
 	private final double quantity;
 
 	/**
+	 * @author yanina
 	 * Default constructor for component of concrete
 	 * @param type on of the 4 types of components: sand, granite, water, cement.
 	 * @see ComponentTypes
@@ -20,6 +21,7 @@ public abstract class BaseComponent implements IComponent{
 	}
 
 	/**
+	 * @author yanina
 	 * Provides amount of the chunk of component we are working with
 	 * @return a double type value of the quantity of component
 	 */

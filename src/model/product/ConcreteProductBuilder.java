@@ -23,6 +23,7 @@ public class ConcreteProductBuilder {
 	private final Storage storage;
 
 	/**
+	 * @author yanina
 	 * Constructs ConcreteProduct Builder. Builder is used to produce concrete in proper order and proportions.
 	 * Builder maintains id of the product that the plant has assigned to it, therefore it is a required parameter in constructor.
 	 * Builder is tied to the storage of the plant.
@@ -35,7 +36,10 @@ public class ConcreteProductBuilder {
 		this.p = new ConcreteProduct();
 		p.setId(productId);
 	}
-	/**Adds first component to the concrete mixer and
+	/**
+	 *
+	 * @author yanina
+	 * Adds first component to the concrete mixer and
 	 * returns the builder of one concrete product when the first element (expected sand) has been added to it.
 	 *
 	 * @param sand third component of the product. Contains info about amount and type of component to add
@@ -54,7 +58,10 @@ public class ConcreteProductBuilder {
 		return this;
 	}
 
-	/**Adds second component to the concrete mixer and
+	/**
+	 *
+	 * @author yanina
+	 * Adds second component to the concrete mixer and
 	 * returns the builder of one concrete product when the second element (expected granite) has been added to it.
 	 *
 	 * @param granite second component of the product. Contains info about amount and type of component to add
@@ -76,7 +83,9 @@ public class ConcreteProductBuilder {
 		return this;
 	}
 
-	/**Adds third component to the concrete mixer and
+	/**
+	 * @author yanina
+	 * Adds third component to the concrete mixer and
 	 * returns the builder of one concrete product when the third element (expected cement) has been added to it.
 	 *
 	 * @param cement third component of the product. Contains info about amount and type of component to add
@@ -97,7 +106,9 @@ public class ConcreteProductBuilder {
 		return this;
 	}
 
-	/**Adds fourth component to the concrete mixer and
+	/**
+	 * @author yanina
+	 * Adds fourth component to the concrete mixer and
 	 * returns the builder of one concrete product when the fourth element (expected water) has been added to it.
 	 *
 	 * @param water fourth component of the product. contains info about amount and type of component to add
@@ -118,7 +129,9 @@ public class ConcreteProductBuilder {
 		return this;
 	}
 
-	/**Produces the final concrete product when all the components have been added
+	/**
+	 * @author yanina
+	 * Produces the final concrete product when all the components have been added
 	 * It sets a time stamp on the time of production of concrete and places an id on the final product that the plant has assigned to it.
 	 *
 	 * @return complete instance of one concrete product
@@ -134,8 +147,8 @@ public class ConcreteProductBuilder {
 		System.out.println("A product completed with id " + p.getId()+ "and timestamp: " + p.getTimeStamp());
 		return p;
 	}
-	
-	
+
+
 	private boolean checkQuantitiesOfComponents() throws ComponentMissingException {
 		double mass = p.getTotalAmntOfComponents();
 		return ((sand.getQuantity() / mass == ComponentTypes.SAND.percentDec) &&

@@ -8,6 +8,7 @@ import model.ComponentTypes;
 public class VehicleFactory {
 
     /**
+     * @author yanina
      * Created a delivery vehicle based on the provided type of component it can deliver and capacity
      * @param type Type of component the vehicle can deliver
      * @param loadCapacity Capacity of delivery vehicle in double type of default measurement used in the project

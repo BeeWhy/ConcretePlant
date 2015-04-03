@@ -32,6 +32,11 @@ public class AltTimeControllerSingleton {
         }
     }
 
+    /**
+     * @author yanina
+     * Provides instance of the time singleton that gices access to current time and sets stamps on events
+     * @return
+     */
     public static AltTimeControllerSingleton getInstance() {
         if (instance == null) {
             instance = new AltTimeControllerSingleton();
@@ -40,6 +45,7 @@ public class AltTimeControllerSingleton {
     }
 
     /**
+     * @author yanina
      * Provides Date object of the current time
      * @return
      */
@@ -48,6 +54,7 @@ public class AltTimeControllerSingleton {
     }
 
     /**
+     * @author yanina
      * Provides current time on the plant as string
      *
      * @return
@@ -57,6 +64,7 @@ public class AltTimeControllerSingleton {
     }
 
     /**
+     * @author yanina
      * Sets a time stamp on an item that occurs with consideration of time, ie order is made, product is created
      *
      * @param event

@@ -5,6 +5,7 @@ import model.ComponentTypes;
 public class Granite extends BaseComponent{
 
 	/**
+	 * @author yanina
 	 * Constructs granite component with user-provided amount
 	 * The type of component is Granite
 	 * @see ComponentTypes

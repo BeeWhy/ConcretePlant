@@ -5,6 +5,7 @@ import model.ComponentTypes;
 public class Water extends BaseComponent{
 
 	/**
+	 * @author yanina
 	 * Constructs water component with user-provided amount
 	 * The type of component is Water
 	 * @see  ComponentTypes

@@ -5,6 +5,7 @@ import model.ComponentTypes;
 public class Cement extends BaseComponent {
 
 	/**
+	 * @author yanina
 	 * Constructs cement component with user-provided amount
 	 * The type of component is Cement
 	 * @see ComponentTypes

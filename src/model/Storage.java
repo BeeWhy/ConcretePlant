@@ -17,40 +17,47 @@ import model.vehicles.VehicleFactory;
  */
 public class Storage {
 	/**
+	 * @author yanina
 	 * Amount of available sand component
 	 */
 	double amntOfSand;
 	/**
+	 * @author yanina
 	 * amount of available granite component
 	 */
 	double amntOfGranite;
 	/**
+	 * @author yanina
 	 * amount of available cement
 	 */
 	double amntOfCement;
 	/**
+	 * @author yanina
 	 * amount of available water
 	 */
 	double amntOfWater;
 	/**
+	 * @author yanina
 	 * available delivery vehicles
 	 */
 	private final BaseVehicle sandAndGraniteVehicle, cementVehicle, waterVehicle;
 
 
 	/**
+	 * @author yanina
 	 *Constructor of the storage that creates delivery vehicles for this storage
 	 */
 
 	public Storage() {
 		super();
-		VehicleFactory f = new VehicleFactory();		
+		 final VehicleFactory f = new VehicleFactory();
 		this.sandAndGraniteVehicle = f.createVehicleByType(ComponentTypes.GRANITE, 14.0);
 		this.cementVehicle = f.createVehicleByType(ComponentTypes.CEMENT, 6.0);
 		this.waterVehicle = f.createVehicleByType(ComponentTypes.WATER, 6.5);
 	}
 
 	/**
+	 * @author yanina
 	 *Requests the delivery vehicles to bring more component if insufficiency had been determined
 	 * @param type type of component
 	 * @throws WrongComponentException if wrong component has been requested of a vehicle
@@ -69,10 +76,13 @@ public class Storage {
 		case WATER:
 			waterVehicle.acceptRequest(this, type);
 			break;
+		default:
+			System.out.println("Don't know what to ");
 		}
 	}
 
 	/**
+	 * @author yanina
 	 * Delivery vehicle will add the amount to available as much as it has delivered
 	 * @param amnt amount of delivered component
 	 * @param type type of component
@@ -114,6 +124,7 @@ public class Storage {
 	}
 
 	/**
+	 * @author yanina
 	 * Use part of the available component amount to the production of the new product
 	 * @param amnt
 	 * @param comp

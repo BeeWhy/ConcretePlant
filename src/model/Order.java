@@ -6,30 +6,36 @@ import model.product.ConcreteProduct;
 import exceptions.EmptyOrderException;
 
 /**
+ * @author yanina
  * Mechanism of customers communicating to the concrete plant and back.
  * Contains all the information about the order.
  * Uses visitor pattern
  */
 public class Order implements IEvent {
 	/**
+	 * @author yanina
 	 * Number of requested loadtrucks of concrete
 	 */
 	private final int numberOfProducts;
 	/**
+	 * @author yanina
 	 * Time when the order was placed
 	 */
 	private String timeStamp;
 	/**
+	 * @author yanina
 	 * Customer who originated the order
 	 */
 	private ICustomer customer;
 	/**
+	 * @author yanina
 	 * List of completed products
 	 */
 	private LinkedList<ConcreteProduct> items;
 
 
 	/**
+	 * @author yanina
 	 * Constructs the new order from a Customer with a number of requested loadtruck products
 	 * @param numberOfProducts requested number of loadtrucks of concrete product
 	 * @param customer customer who initiated the order
@@ -46,6 +52,7 @@ public class Order implements IEvent {
 
 
 	/**
+	 * @author yanina
 	 * Provides the time when the order was placed
 	 * @return
 	 */
@@ -56,6 +63,7 @@ public class Order implements IEvent {
 
 
 	/**
+	 * @author yanina
 	 * (Typically the plant) sets the time when the order was accepted
 	 * @param timestamp a current time on the plant, that is provided by time controller singleton
 	 */
@@ -68,6 +76,7 @@ public class Order implements IEvent {
 
 
 	/**
+	 * @author yanina
 	 * Provides instance of the customer who originated the order
 	 * @return
 	 */
@@ -77,6 +86,7 @@ public class Order implements IEvent {
 
 
 	/**
+	 * @author yanina
 	 * Provides infomation how many products were requested
 	 * @return int value of the number of requested products
 	 */
@@ -86,6 +96,7 @@ public class Order implements IEvent {
 
 
 	/**
+	 * @author yanina
 	 * This method is called when one product is ready and it is added to the existing order
 	 * @param item a ready loadtruck of concrete product
 	 */
@@ -97,6 +108,7 @@ public class Order implements IEvent {
 	}
 
 	/**
+	 * @author yanina
 	 * Provides infomation how many products have already been delivered
 	 * @return int value on how many products have been delivered
 	 */
@@ -106,6 +118,7 @@ public class Order implements IEvent {
 	}
 
 	/**
+	 * @author yanina
 	 * Provides number of products that are still to be delivered
 	 * @return int value of how many products still need to be delivered
 	 */
