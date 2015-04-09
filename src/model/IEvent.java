@@ -20,7 +20,6 @@ public interface IEvent {
 	 * @author yanina
 	 * The time of event occurence
 	 * @param timestamp a current time on the plant, that is provided by time controller singleton
-	 * @see util.TimeControllerSingleton
 	 * @see util.AltTimeControllerSingleton
 	 */
 	void setTimeStamp(String timestamp);

@@ -25,9 +25,7 @@ public class VehicleFactory {
             case WATER:
                 return new WaterVehicle(loadCapacity);
 
-
         }
-
         return null;
     }
 }

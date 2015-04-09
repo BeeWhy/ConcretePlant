@@ -13,7 +13,6 @@ import model.vehicles.SandAndGraniteVehicle;
 import org.junit.Before;
 import org.junit.Test;
 import util.AltTimeControllerSingleton;
-import util.TimeControllerSingleton;
 
 import java.util.Date;
 

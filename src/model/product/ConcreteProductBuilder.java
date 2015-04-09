@@ -1,7 +1,6 @@
 package model.product;
 
 import util.AltTimeControllerSingleton;
-import util.TimeControllerSingleton;
 import exceptions.ComponentMissingException;
 import exceptions.InsufficientSuppliesException;
 import exceptions.WrongComponentException;
